@@ -1,0 +1,120 @@
+@font-face {
+    font-family: Arsenica;
+    src: url(../assets/font/Arsenica.ttf);
+}
+
+@font-face {
+    font-family: NewYork;
+    src: url(../assets/font/NewYork.otf);
+}
+
+.header{
+    background-color: #064d25;
+    position: relative;
+    z-index: 5;
+}
+
+.navbar {
+    background-color: #064d25;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+.iconic{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.iconchild{
+    padding-right: 20px;
+}
+.hamburger {
+    display: none;
+    background-color: #064d25;
+}
+
+.bar {
+    display: block;
+    width: 35px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff;
+}
+
+.navmenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type:none;
+}
+
+.navitem {
+    margin-left: 3rem;
+}
+
+.navlink{
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: #ffffff;
+    /* text-transform: uppercase; */
+    font-family: 'Arsenica';
+}
+
+.navlink:hover{
+    color: #c68b04;
+}
+
+.navlogo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #482ff7;
+}
+
+@media only screen and (max-width: 768px) {
+    .navmenu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #003d1b;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        opacity: 1;
+    }
+
+    .navmenu.active {
+        left: 0;
+    }
+
+    .navitem {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.footer {
+    font-size: 1.5rem;
+}
