@@ -106,7 +106,7 @@ export default function Home() {
               delay: 1,
             }}
           >
-            <h3>10% We build a town in metaverse</h3>
+            <h4>10% We build a town in metaverse</h4>
           </motion.div>
           <motion.div
             className={styles.largecard}
@@ -118,7 +118,7 @@ export default function Home() {
               delay: 1,
             }}
           >
-            <h3>25% We build a town in metaverse</h3>
+            <h4>25% We build a town in metaverse</h4>
           </motion.div>
           <motion.div
             className={styles.largecard}
@@ -130,7 +130,7 @@ export default function Home() {
               delay: 1,
             }}
           >
-            <h3>50% We build a town in metaverse</h3>
+            <h4>50% We build a town in metaverse</h4>
           </motion.div>
           <motion.div
             className={styles.largecard}
@@ -142,7 +142,7 @@ export default function Home() {
               delay: 1,
             }}
           >
-            <h3>75% We build a town in metaverse</h3>
+            <h4>75% We build a town in metaverse</h4>
           </motion.div>
           <motion.div
             className={styles.largecard}
@@ -154,7 +154,7 @@ export default function Home() {
               delay: 1,
             }}
           >
-            <h3>100% We build a town in metaverse</h3>
+            <h4>100% We build a town in metaverse</h4>
           </motion.div>
         </div>
         <Image src="/separator.png" alt="Vercel Logo" width={819} height={40} />
@@ -171,7 +171,7 @@ export default function Home() {
             }}
           >
             <Image src="/gas.jpeg" alt="Vercel Logo" width={400} height={400} />
-            <h3>Agent Gallahad</h3>
+            <h4>Agent Gallahad</h4>
           </motion.div>
           <motion.div
             className={styles.smallcard}
@@ -184,7 +184,7 @@ export default function Home() {
             }}
           >
             <Image src="/gas.jpeg" alt="Vercel Logo" width={400} height={400} />
-            <h3>Agent Hennesy</h3>
+            <h4>Agent Hennesy</h4>
           </motion.div>
           <motion.div
             className={styles.smallcard}
@@ -197,7 +197,7 @@ export default function Home() {
             }}
           >
             <Image src="/gas.jpeg" alt="Vercel Logo" width={400} height={400} />
-            <h3>Agent Tequila</h3>
+            <h4>Agent Tequila</h4>
           </motion.div>
           <motion.div
             className={styles.smallcard}
@@ -210,7 +210,7 @@ export default function Home() {
             }}
           >
             <Image src="/gas.jpeg" alt="Vercel Logo" width={400} height={400} />
-            <h3>Agent Gizmo</h3>
+            <h4>Agent Gizmo</h4>
           </motion.div>
         </div>
       </main>
