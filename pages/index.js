@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import { motion } from 'framer-motion'
-
+import Button from '@material-ui/core/Button'
 export default function Home() {
   const spring = {
     type: 'spring',
@@ -49,7 +49,10 @@ export default function Home() {
             />
           </motion.div>
         </div>
-        <br />
+
+
+
+         
         <Image src="/separator.png" alt="Vercel Logo" width={819} height={40} />
         <div className={styles.gridl}>
           <motion.div

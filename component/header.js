@@ -4,6 +4,8 @@ import styles from '../styles/Layout.module.css'
 import styles2 from '../styles/Home.module.css'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
+import Button from '@material-ui/core/Button'
+
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false)
   const openMenu = () => setIsOpen(!isOpen)
@@ -13,16 +15,18 @@ export default function Header() {
         <motion.nav
           className={styles.navbar}
           initial={{ y: '-20vw' }}
-          animate={{  y: 0 }}
+          animate={{ y: 0 }}
           transition={{
             type: 'spring',
             stiffness: 100,
             duration: 2,
           }}
         >
-          <Link href="/">
-            <Image src="/logo.svg" alt="Vercel Logo" width={60} height={60} />
-          </Link>
+          <div className={styles.headlogo}>
+            <Link href="/">
+              <Image src="/logo.svg" alt="Vercel Logo" width={60} height={60} />
+            </Link>
+          </div>
           <ul
             className={
               isOpen === false
@@ -87,7 +91,18 @@ export default function Header() {
               </Link>
             </li>
           </ul>
+
           <div className={styles.iconic}>
+            <div className={styles.iconchild}>
+              <Button
+                variant="contained"
+                className={styles.cntButton}
+                size="small"
+                labelStyle={{ fontSize: 15 }}
+              >
+                Connect Wallet
+              </Button>
+            </div>
             <div className={styles.iconchild}>
               <Link href="/">
                 <Image
